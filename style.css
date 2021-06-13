@@ -4,6 +4,9 @@
     display: flex;
     justify-content: center;
 }
+.head .img{
+    border-radius: 50%;
+}
 .content{
     margin-left: 20px;
 }
