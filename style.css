@@ -5,7 +5,18 @@
     justify-content: center;
 }
 .head .img{
+    width: 170px;  
     border-radius: 50%;
+}
+
+.head .passport{
+    background-color: #f0f;
+    width: 170px;
+    height: 170px;
+    margin: 0 0 0 3rem;
+}
+.head .passport img{
+    width: 170px;
 }
 .content{
     margin-left: 20px;
@@ -27,9 +38,7 @@
     letter-spacing: 1px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.head .image .img{
-    width: 170px;  
-}
+
 .head .content .arabic{
      width: 410px;
 }
@@ -107,6 +116,16 @@ form .name{
     *{
         margin: 0;
         padding: 0;
+    }
+    
+    .head .passport{
+        /* background-color: #f0f; */
+        /* width: 100px;
+        height: 100px; */
+        /* margin: 2rem 0 0 2rem; */
+    }
+    .head .passport img{
+        width: 115px;
     }
     .some{
         font-size: 13px;
