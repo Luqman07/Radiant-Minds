@@ -118,12 +118,6 @@ form .name{
         padding: 0;
     }
     
-    .head .passport{
-        /* background-color: #f0f; */
-        /* width: 100px;
-        height: 100px; */
-        /* margin: 2rem 0 0 2rem; */
-    }
     .head .passport img{
         width: 115px;
     }
