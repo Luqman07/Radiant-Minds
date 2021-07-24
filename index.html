@@ -5,20 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radiant Minds result template</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <!--Logo and details of the company-->
-        <div class="head p-3">
+        <div class="head d-flex justify-content-center p-3">
             <div class="image">
                 <img class="img" src="Image\radiant logo.jpeg" alt="Radiant minds logo">
             </div>
@@ -30,17 +27,15 @@
                 <p class="h4 space"><strong>Creche, Nursery & Primary</strong></p>
                 <p>
                     <strong>
-                        <i class="fa fa-map-marker text-danger "></i>Block 20 Road 1, Ajebo Road Housing Estate, Kemta,
-                        Idi-Aba, Abeokuta
+                        <i class="fa fa-map-marker text-danger "></i>Block 20 Road 1, Ajebo Road Housing Estate, Kemta, Idi-Aba, Abeokuta
                         <br>
-                        <i class="fa fa-phone text-danger"></i>08172951965 &nbsp;&nbsp; <img class="icon"
-                            src="Image\whatsapp.png" alt="">08147971373 &nbsp;&nbsp;
+                        <i class="fa fa-phone text-danger"></i>08172951965 &nbsp;&nbsp;<img class="icon"src="Image\whatsapp.png" alt="">08147971373&nbsp;&nbsp; 
                         <img class="icon" src="Image\gmail.png" alt=""> radiantmindsschool@gmail.com
                     </strong>
                 </p>
                 <p class="h5"><strong><u>FIRST TERM STUDENT'S PERFORMANCE REPORT</u></strong></p>
             </div>
- 
+
             <!-- This passport div is what i added -->
             <div class="passport">
                 <img src="Image\radiant logo.jpeg" alt="Passport Photograph">
@@ -51,531 +46,536 @@
 
         <!--Student details-->
 
-        <div class="some">
-            <div class="one">
-                <form action="" class="p-3">
-                    <div class="stu-name mb-2">
-                        <label for="name">NAME:</label>
-                        <div class="name border-bottom"></div>
+        <!-- I wrapped the content in a div and gave it a sub-container class so that i could give it a padding -->
+        <div class="sub-container pt-0 p-5">
+            <div class="some ">
+                <div class="one p-3">
+                    <form action="" class="p-1" >
+                        <div class="stu-name mb-2">
+                            <label for="name"><strong>NAME:</strong></label>
+                            <div class="name border-bottom px-2"></div>
+                        </div>
+                        
+                        <!-- Added d-flex to the class below and removed the styling from the css file -->
+                        <div class="sec mb-2 d-flex">
+                            <div class="stu-class">
+                                <strong><label>CLASS:</label></strong>
+                                <div class="class border-bottom px-2"></div>
+                            </div>
+                            <div class="stu-sess">
+                                <strong><label>SESSION:</label></strong>
+                                <div class="session border-bottom px-2"></div>
+                            </div>
+                            <div class="stu-add">
+                                <strong><label>ADMISSION:</label></strong>
+                                <div class="admission border-bottom px-2"></div>
+                            </div>
+                        </div>
+
+                        <!-- Added d-flex to the class below -->
+                        <div class="thrd d-flex">
+                            <div class="stu-dob">
+                                <strong><label>DOB:</label></strong>
+                                <div class="dob border-bottom px-2"></div>
+                            </div>
+                            <div class="stu-age">
+                                <strong><label>AGE:</label></strong>
+                                <div class="age border-bottom px-2"></div>
+                            </div>
+                            <div class="stu-gender">
+                                <strong><label>GENDER:</label></strong>
+                                <div class="gender border-bottom px-2"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+    
+    
+    
+                <!-- I added the bootstrap grid to the divs wrapping the table below  -->
+                <div class="two row">
+                    <div class="sub1 col-sm-9">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="heading" scope="col"> SUBJECTS</th>
+                                    <th scope="col">C.A.<br>(40)</th>
+                                    <th scope="col">Exam<br>(60)</th>
+                                    <th scope="col">Total<br>(100)</th>
+                                    <th scope="col">Highest <br>score</th>
+                                    <th scope="col">Lowest <br>score</th>
+                                    <th scope="col">Class<br> Average</th>
+                                    <th scope="col">Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Basic Science and Technology</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cultural and Creative Art</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">English Language</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Hand Writing</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Yoruba</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Mathematics</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pre-vocational Studies</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Quantitative Reasoning</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Religious and National Values</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Verbal Reasoning</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Qur'an /<img src="Image\Quran.png" alt=""> </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Hadeeth /<img src="Image\Hadeeth.png" alt=""></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fiqh /<img src="Image\fiqh.png" alt=""></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Arabic /<img src="Image\Arabiyyahh.png" alt=""></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Aqeedah /<img src="Image\aqee.png" alt=""></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Seerah /<img src="Image\see.png" alt=""></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+    
+                        </table>
                     </div>
-                    <div class="sec mb-2">
-                        <div class="stu-class">
-                            <label for="class">CLASS:</label>
-                            <div class="class border-bottom "></div>
-                        </div>
-                        <div class="stu-sess">
-                            <label for="session">SESSION:</label>
-                            <div class="session border-bottom "></div>
-                        </div>
-                        <div class="stu-add">
-                            <label for="admission">ADMISSION:</label>
-                            <div class="admission border-bottom "></div>
+    
+                    <div class="sub2 col-sm-3">
+                        <table class="table caption-top table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <td class="text-center heading" colspan="3">PERFORMANCE SUMMARY</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Total Obtained:</td>
+                                    <td>powdqqw[fo</td>
+    
+                                </tr>
+                                <tr>
+                                    <td>Total Unobtained:</td>
+                                    <td></td>
+    
+                                </tr>
+                                <tr>
+                                    <td>%TAGE</td>
+                                    <td></td>
+    
+                                </tr>
+                                <tr>
+                                    <td>GRADE</td>
+                                    <td></td>
+    
+                                </tr>
+                            </tbody>
+                        </table>
+    
+    
+                        <table class="table caption-top table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <td class="text-center heading" colspan="3">GRADE SCALE</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+    
+                                <tr>
+                                    <td>A</td>
+                                    <td>70-100%</td>
+                                    <td>EXCELLENT</td>
+                                </tr>
+                                <tr>
+                                    <td>B</td>
+                                    <td>60-69%</td>
+                                    <td>VERY GOOD</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td>50-59%</td>
+                                    <td>GOOD</td>
+    
+                                </tr>
+                                <tr>
+                                    <td>D</td>
+                                    <td>40-49%</td>
+                                    <td>AVERAGE</td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>0-39%</td>
+                                    <td>FAIL</td>
+                                </tr>
+                            </tbody>
+                        </table>
+    
+    
+                        <table class="table caption-top table-sm table-bordered">
+    
+                            <tbody>
+                                <tr>
+                                    <td class="text-center heading" colspan="2">ATTENDANCE SUMMARY</td>
+                                </tr>
+                                <tr>
+                                    <td>No of Times School opened</td>
+                                    <td></td>
+    
+                                </tr>
+                                <tr>
+                                    <td>No of times present</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td> No of times Absent</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+    
+    
+                        <table class="table caption-top table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <td class="text-center heading" colspan="1">NEXT TERM BEGINS</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Empty</td>
+                                </tr>
+    
+                            </tbody>
+                        </table>
+    
+    
+                    </div>
+                </div>
+    
+                <!-- I added the bootstrap grid to the divs wrapping the table below  -->
+                <div class="three mt-3 row">
+                    <div class="sub3 col-lg-6">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr class="heading">
+                                    <th scope="col">PSYCHOMOTOR DOMAIN </th>
+                                    <th scope="col">5</th>
+                                    <th scope="col">4</th>
+                                    <th scope="col">3</th>
+                                    <th scope="col">2</th>
+                                    <th scope="col">1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Handwriting</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Fluency</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Sports</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Crafts</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Drawing</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Public speaking</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    
+                    <div class="sub4 col-lg-6">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr class="heading">
+                                    <th scope="col">AFFECTIVE DOMAIN </th>
+                                    <th scope="col">5</th>
+                                    <th scope="col">4</th>
+                                    <th scope="col">3</th>
+                                    <th scope="col">2</th>
+                                    <th scope="col">1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Punctuality</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Attendance</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Neatness</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Politeness</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Attentiveness</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Self control/Calmness</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Obedience</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Relationship with others</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+    
+                <div class="remark-container ">
+                    <div class="border remark p-3 mb-4">
+                        <div class="t-wrapper">
+                            <div class="class-teacher-remark ">
+                                <label>Class Teacher's Remark</label>
+                                <!-- Added font size below -->
+                                <div style="font-size: 12px;" class="remark-ct border-bottom"></div>
+                            </div>
+                            <div class="class-teacher-sign">
+                                <!-- Added px-4 below -->
+                                <label class="px-4">Sign</label>
+                                <div class="sign border-bottom "></div>
+                            </div>
+    
                         </div>
                     </div>
-                    <div class="thrd">
-                        <div class="stu-dob">
-                            <label for="dob">DOB:</label>
-                            <div class="dob border-bottom "></div>
-                        </div>
-                        <div class="stu-age">
-                            <label for="age">AGE:</label>
-                            <div class="age border-bottom "></div>
-                        </div>
-                        <div class="stu-gender">
-                            <label for="gender">GENDER:</label>
-                            <div class="gender border-bottom "></div>
+                    <div class="remark2  border p-3">
+                        <div class="hod-wrapper">
+                            <div class="class-teacher-remark">
+                                <label>HOD's Remark</label>
+                                <!-- Added font size below -->
+                                <div style="font-size: 12px;" class="remark-hd border-bottom"></div>
+                            </div>
+                            <div class="class-teacher-sign ">
+                                <!-- Added px-4 below -->
+                                <label class="px-4">Sign</label>
+                                <div class="sign border-bottom"></div>
+                            </div>
+    
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
-
-            <div class="two ">
-                <div class="sub1">
-                    <table class="table table-sm table-bordered">
-                        <thead>
-                            <tr>
-                                <th class="heading" scope="col"> SUBJECTS</th>
-                                <th scope="col">C.A.<br>(40)</th>
-                                <th scope="col">Exam<br>(60)</th>
-                                <th scope="col">Total<br>(100)</th>
-                                <th scope="col">Highest <br>score</th>
-                                <th scope="col">Lowest <br>score</th>
-                                <th scope="col">Class<br> Average</th>
-                                <th scope="col">Grade</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Basic Science and Technology</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Cultural and Creative Art</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">English Language</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Hand Writing</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Yoruba</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mathematics</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Pre-vocational Studies</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Quantitative Reasoning</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Religious and National Values</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Verbal Reasoning</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Qur'an /<img src="Image\Quran.png" alt=""> </th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Hadeeth /<img src="Image\Hadeeth.png" alt=""></th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Fiqh /<img src="Image\fiqh.png" alt=""></th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Arabic /<img src="Image\Arabiyyahh.png" alt=""></th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Aqeedah /<img src="Image\aqee.png" alt=""></th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Seerah /<img src="Image\see.png" alt=""></th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-
-                    </table>
-                </div>
-
-                <div class="sub2">
-                    <table class="table caption-top table-sm table-bordered">
-                        <thead>
-                            <tr>
-                                <td class="text-center heading" colspan="3">PERFORMANCE SUMMARY</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Total Obtained:</td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td>Total Unobtained:</td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td>%TAGE</td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td>GRADE</td>
-                                <td></td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-                    <table class="table caption-top table-sm table-bordered">
-                        <thead>
-                            <tr>
-                                <td class="text-center heading" colspan="3">GRADE SCALE</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                            <tr>
-                                <td>A</td>
-                                <td>70-100%</td>
-                                <td>EXCELLENT</td>
-                            </tr>
-                            <tr>
-                                <td>B</td>
-                                <td>60-69%</td>
-                                <td>VERY GOOD</td>
-                            </tr>
-                            <tr>
-                                <td>C</td>
-                                <td>50-59%</td>
-                                <td>GOOD</td>
-
-                            </tr>
-                            <tr>
-                                <td>D</td>
-                                <td>40-49%</td>
-                                <td>AVERAGE</td>
-                            </tr>
-                            <tr>
-                                <td>F</td>
-                                <td>0-39%</td>
-                                <td>FAIL</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-                    <table class="table caption-top table-sm table-bordered">
-
-                        <tbody>
-                            <tr>
-                                <td class="text-center heading" colspan="2">ATTENDANCE SUMMARY</td>
-                            </tr>
-                            <tr>
-                                <td>No of Times School opened</td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td>No of times present</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td> No of times Absent</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-                    <table class="table caption-top table-sm table-bordered">
-                        <thead>
-                            <tr>
-                                <td class="text-center heading" colspan="1">NEXT TERM BEGINS</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Empty</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-
-
-                </div>
-            </div>
-
-
-            <div class="three mt-3">
-                <div class="sub3">
-                    <table class="table table-sm table-bordered">
-                        <thead>
-                            <tr class="heading">
-                                <th scope="col">PSYCHOMOTOR DOMAIN </th>
-                                <th scope="col">5</th>
-                                <th scope="col">4</th>
-                                <th scope="col">3</th>
-                                <th scope="col">2</th>
-                                <th scope="col">1</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Handwriting</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Fluency</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Sports</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Crafts</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Drawing</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Public speaking</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="sub4">
-                    <table class="table table-sm table-bordered">
-                        <thead>
-                            <tr class="heading">
-                                <th scope="col">AFFECTIVE DOMAIN </th>
-                                <th scope="col">5</th>
-                                <th scope="col">4</th>
-                                <th scope="col">3</th>
-                                <th scope="col">2</th>
-                                <th scope="col">1</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Punctuality</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Attendance</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Neatness</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Politeness</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Attentiveness</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Self control/Calmness</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Obedience</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Relationship with others</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="remark-container ">
-                <div class="border p-3 remark mb-4">
-                    <div class="t-wrapper">
-                        <div class="class-teacher-remark">
-                            <label for="class-teachers-remark">Class Teacher's Remark</label>
-                            <div class="remark-ct border-bottom"></div>
-                        </div>
-                        <div class="class-teacher-sign">
-                            <label for="class-teachers-sign">Sign</label>
-                            <div class="sign border-bottom"></div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="remark2 mb-4">
-                    <div class="hod-wrapper border p-3">
-                        <div class="class-teacher-remark">
-                            <label for="class-teachers-remark">HOD's Remark</label>
-                            <div class="remark-hd border-bottom"></div>
-                        </div>
-                        <div class="class-teacher-sign ">
-                            <label for="class-teachers-sign">Sign</label>
-                            <div class="sign border-bottom"></div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+    
         </div>
-
-        <footer class="heading p-3"></footer>
+        <footer class="heading p-3"></footer >
     </div>
+    
 
 
 
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
 </body>
 
 </html>
