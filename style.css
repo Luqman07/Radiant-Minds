@@ -3,18 +3,18 @@
     background-color: #FFFCC7;
 }
 .head .img{
-    width: 170px;  
+    width: 150px;  
     border-radius: 50%;
 }
 
 /*.head .passport and .head .passport img are what I added */
 .head .passport{
-    width: 170px;
-    height: 170px;
+    width: 150px;
+    height: 150px;
     margin: 0 0 0 1rem;
 }
 .head .passport img{
-    width: 170px;
+    width: 150px;
 }
 .content{
     margin-left: 2rem;
@@ -51,7 +51,6 @@ form{
     display: flex;
     width: 100%;
 }
-/* from here */
 .stu-name > div{
     position: relative;
     left: .2rem;
@@ -95,7 +94,7 @@ form{
     bottom: .35rem;
     width: 95%;
 }
-/* to here is completely new*/
+
 
 /* result layout */
 
@@ -108,7 +107,15 @@ form{
     color: #F8EA0C;
 }
 
-/* these last two before the print media query has been altered */
+/*These is the styling for the table*/
+table, th, td,tr{
+    border: 2px solid black;
+}
+/*This is the styling to increase the subject font-size*/
+.subject{
+    font-size: 20px;
+}
+
 .class-teacher-remark, .class-teacher-sign{
     width: 100%;
     display: grid;

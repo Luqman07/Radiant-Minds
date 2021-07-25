@@ -13,9 +13,11 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <!--Logo and details of the company-->
-        <div class="head d-flex justify-content-center p-3">
+
+        <!-- Added pb-0 to the class below -->
+        <div class="head d-flex justify-content-center p-3 pb-0">
             <div class="image">
                 <img class="img" src="Image\radiant logo.jpeg" alt="Radiant minds logo">
             </div>
@@ -36,7 +38,7 @@
                 <p class="h5"><strong><u>FIRST TERM STUDENT'S PERFORMANCE REPORT</u></strong></p>
             </div>
 
-            <!-- This passport div is what i added -->
+          
             <div class="passport">
                 <img src="Image\radiant logo.jpeg" alt="Passport Photograph">
             </div>
@@ -46,45 +48,46 @@
 
         <!--Student details-->
 
-        <!-- I wrapped the content in a div and gave it a sub-container class so that i could give it a padding -->
+        
         <div class="sub-container pt-0 p-5">
             <div class="some ">
                 <div class="one p-3">
                     <form action="" class="p-1" >
                         <div class="stu-name mb-2">
                             <label for="name"><strong>NAME:</strong></label>
-                            <div class="name border-bottom px-2"></div>
+                            <!-- Added .border-dark and .border-2 to all the lines below to bolden it -->
+                            <div class="name border-bottom border-dark border-2 px-2"></div>
                         </div>
                         
-                        <!-- Added d-flex to the class below and removed the styling from the css file -->
+                        
                         <div class="sec mb-2 d-flex">
                             <div class="stu-class">
                                 <strong><label>CLASS:</label></strong>
-                                <div class="class border-bottom px-2"></div>
+                                <div class="class border-bottom border-dark border-2 px-2"></div>
                             </div>
                             <div class="stu-sess">
                                 <strong><label>SESSION:</label></strong>
-                                <div class="session border-bottom px-2"></div>
+                                <div class="session border-bottom border-dark border-2 px-2"></div>
                             </div>
                             <div class="stu-add">
                                 <strong><label>ADMISSION:</label></strong>
-                                <div class="admission border-bottom px-2"></div>
+                                <div class="admission border-bottom border-dark border-2 px-2"></div>
                             </div>
                         </div>
 
-                        <!-- Added d-flex to the class below -->
+                        
                         <div class="thrd d-flex">
                             <div class="stu-dob">
                                 <strong><label>DOB:</label></strong>
-                                <div class="dob border-bottom px-2"></div>
+                                <div class="dob border-bottom border-dark border-2 px-2"></div>
                             </div>
                             <div class="stu-age">
                                 <strong><label>AGE:</label></strong>
-                                <div class="age border-bottom px-2"></div>
+                                <div class="age border-bottom border-dark border-2 px-2"></div>
                             </div>
                             <div class="stu-gender">
                                 <strong><label>GENDER:</label></strong>
-                                <div class="gender border-bottom px-2"></div>
+                                <div class="gender border-bottom border-dark border-2 px-2"></div>
                             </div>
                         </div>
                     </form>
@@ -92,13 +95,14 @@
     
     
     
-                <!-- I added the bootstrap grid to the divs wrapping the table below  -->
+                <!-- I removed the '.table-bordered' class from all the table tag so that I'd be able to style the border in the css file-->
                 <div class="two row">
                     <div class="sub1 col-sm-8">
-                        <table class="table table-sm table-bordered">
+                        <table class="table table-sm ">
                             <thead>
                                 <tr>
-                                    <th class="heading" scope="col"> SUBJECTS</th>
+                                    <!-- Added a subject class below to change the font size  -->
+                                    <th class="heading subject" scope="col"> SUBJECTS</th>
                                     <th scope="col">C.A.<br>(40)</th>
                                     <th scope="col">Exam<br>(60)</th>
                                     <th scope="col">Total<br>(100)</th>
@@ -111,7 +115,7 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">Basic Science and Technology</th>
-                                    <td></td>
+                                    <td>44</td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -275,7 +279,7 @@
                     </div>
     
                     <div class="sub2 col-sm-4">
-                        <table class="table caption-top table-sm table-bordered">
+                        <table class="table caption-top table-sm ">
                             <thead>
                                 <tr>
                                     <td class="text-center heading" colspan="3">PERFORMANCE SUMMARY</td>
@@ -306,7 +310,7 @@
                         </table>
     
     
-                        <table class="table caption-top table-sm table-bordered">
+                        <table class="table caption-top table-sm ">
                             <thead>
                                 <tr>
                                     <td class="text-center heading" colspan="3">GRADE SCALE</td>
@@ -344,7 +348,7 @@
                         </table>
     
     
-                        <table class="table caption-top table-sm table-bordered">
+                        <table class="table caption-top table-sm ">
     
                             <tbody>
                                 <tr>
@@ -367,7 +371,7 @@
                         </table>
     
     
-                        <table class="table caption-top table-sm table-bordered">
+                        <table class="table caption-top table-sm ">
                             <thead>
                                 <tr>
                                     <td class="text-center heading" colspan="1">NEXT TERM BEGINS</td>
@@ -385,10 +389,10 @@
                     </div>
                 </div>
     
-                <!-- I added the bootstrap grid to the divs wrapping the table below  -->
+               
                 <div class="three mt-3 row">
                     <div class="sub3 col-lg-6">
-                        <table class="table table-sm table-bordered">
+                        <table class="table table-sm ">
                             <thead>
                                 <tr class="heading">
                                     <th scope="col">PSYCHOMOTOR DOMAIN </th>
@@ -453,7 +457,7 @@
                     </div>
     
                     <div class="sub4 col-lg-6">
-                        <table class="table table-sm table-bordered">
+                        <table class="table table-sm ">
                             <thead>
                                 <tr class="heading">
                                     <th scope="col">AFFECTIVE DOMAIN </th>
@@ -535,32 +539,34 @@
                 </div>
     
                 <div class="remark-container ">
-                    <div class="border remark p-3 mb-4">
+                    <!-- Added pb-0 below -->
+                    <div class="border border-dark border-2 remark p-3 pb-0 mb-4">
                         <div class="t-wrapper">
                             <div class="class-teacher-remark ">
                                 <label>Class Teacher's Remark</label>
                                 <!-- Added font size below -->
-                                <div style="font-size: 12px;" class="remark-ct border-bottom"></div>
+                                <div style="font-size: 12px;" class="remark-ct"></div>
                             </div>
                             <div class="class-teacher-sign">
                                 <!-- Added px-4 below -->
                                 <label class="px-4">Sign</label>
-                                <div class="sign border-bottom "></div>
+                                <div class="sign"></div>
                             </div>
     
                         </div>
                     </div>
-                    <div class="remark2  border p-3">
+                    <!-- Added pb-0 below -->
+                    <div class="remark2 border-dark border-2 border p-3 pb-0">
                         <div class="hod-wrapper">
                             <div class="class-teacher-remark">
                                 <label>HOD's Remark</label>
                                 <!-- Added font size below -->
-                                <div style="font-size: 12px;" class="remark-hd border-bottom"></div>
+                                <div style="font-size: 12px;" class="remark-hd"></div>
                             </div>
                             <div class="class-teacher-sign ">
                                 <!-- Added px-4 below -->
                                 <label class="px-4">Sign</label>
-                                <div class="sign border-bottom"></div>
+                                <div class="sign"></div>
                             </div>
     
                         </div>
