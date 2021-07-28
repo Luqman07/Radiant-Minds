@@ -13,10 +13,9 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="wrapper">
         <!--Logo and details of the company-->
 
-        <!-- Added pb-0 to the class below -->
         <div class="head d-flex justify-content-center p-3 pb-0">
             <div class="image">
                 <img class="img" src="Image\radiant logo.jpeg" alt="Radiant minds logo">
@@ -27,7 +26,8 @@
                 </h1>
                 <img class="arabic" src="Image\arabic-removebg-preview.png" alt="Arabic text">
                 <p class="h4 space"><strong>Creche, Nursery & Primary</strong></p>
-                <p>
+                <!-- Added print class below -->
+                <p class="print">
                     <strong>
                         <i class="fa fa-map-marker text-danger "></i>Block 20 Road 1, Ajebo Road Housing Estate, Kemta, Idi-Aba, Abeokuta
                         <br>
@@ -48,14 +48,13 @@
 
         <!--Student details-->
 
-        
-        <div class="sub-container pt-0 p-5">
+         <!-- Added pb-4 below -->
+        <div class="sub-container pt-0 p-5 pb-4">
             <div class="some ">
                 <div class="one p-3">
                     <form action="" class="p-1" >
                         <div class="stu-name mb-2">
                             <label for="name"><strong>NAME:</strong></label>
-                            <!-- Added .border-dark and .border-2 to all the lines below to bolden it -->
                             <div class="name border-bottom border-dark border-2 px-2"></div>
                         </div>
                         
@@ -95,13 +94,12 @@
     
     
     
-                <!-- I removed the '.table-bordered' class from all the table tag so that I'd be able to style the border in the css file-->
+                
                 <div class="two row">
                     <div class="sub1 col-sm-8">
                         <table class="table table-sm ">
                             <thead>
                                 <tr>
-                                    <!-- Added a subject class below to change the font size  -->
                                     <th class="heading subject" scope="col"> SUBJECTS</th>
                                     <th scope="col">C.A.<br>(40)</th>
                                     <th scope="col">Exam<br>(60)</th>
@@ -115,7 +113,7 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">Basic Science and Technology</th>
-                                    <td>44</td>
+                                    <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -390,7 +388,7 @@
                 </div>
     
                
-                <div class="three mt-3 row">
+                <div class="three  row">
                     <div class="sub3 col-lg-6">
                         <table class="table table-sm ">
                             <thead>
@@ -539,32 +537,27 @@
                 </div>
     
                 <div class="remark-container ">
-                    <!-- Added pb-0 below -->
                     <div class="border border-dark border-2 remark p-3 pb-0 mb-4">
                         <div class="t-wrapper">
                             <div class="class-teacher-remark ">
                                 <label>Class Teacher's Remark</label>
-                                <!-- Added font size below -->
-                                <div style="font-size: 12px;" class="remark-ct"></div>
+                                <div class="remark-ct">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo neque doloremque atque sit voluptatem fugit, totam tempora, fuga culpa tenetur dolores autem dicta eaque incidunt. Consectetur ipsa nam minima provident!</div>
                             </div>
                             <div class="class-teacher-sign">
-                                <!-- Added px-4 below -->
                                 <label class="px-4">Sign</label>
                                 <div class="sign"></div>
                             </div>
     
                         </div>
                     </div>
-                    <!-- Added pb-0 below -->
+               
                     <div class="remark2 border-dark border-2 border p-3 pb-0">
                         <div class="hod-wrapper">
                             <div class="class-teacher-remark">
-                                <label>HOD's Remark</label>
-                                <!-- Added font size below -->
-                                <div style="font-size: 12px;" class="remark-hd"></div>
+                                <label>HOD's Remark</label>                          
+                                <div class="remark-hd">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae id maiores consectetur aspernatur vitae ducimus unde ipsam error nihil totam eum repellat veritatis illum magni itaque eos, provident placeat labore?</div>
                             </div>
                             <div class="class-teacher-sign ">
-                                <!-- Added px-4 below -->
                                 <label class="px-4">Sign</label>
                                 <div class="sign"></div>
                             </div>
@@ -575,6 +568,7 @@
             </div>
     
         </div>
+                  
         <footer class="heading p-3"></footer >
     </div>
     
